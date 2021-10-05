@@ -1,2 +1,3 @@
 push
 modifico fitxer desde la branca branch
+modifico des de branch otra vez.. antes creo q no lo he echo bien
