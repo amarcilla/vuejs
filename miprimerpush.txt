@@ -1,3 +1,7 @@
 push
+
+modifico el fitxer sense fer un pull abans
 modifico fitxer desde la branca branch
 modifico des de branch otra vez.. antes creo q no lo he echo bien
+modifico desde main
+Arreglo conflite desde main
