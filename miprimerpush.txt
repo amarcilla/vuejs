@@ -1,1 +1,2 @@
 push
+modifico el fitxer sense fer un pull abans
