@@ -1,3 +1,6 @@
 push
 modifico fitxer desde la branca branch
 modifico fitxer desde la branca rama
+modifico el fitxer sense fer un pull abans
+modifico desde main
+Arreglo conflictes desde rama
