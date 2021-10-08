@@ -219,3 +219,11 @@ ul  {
  
   
 }
+
+
+@media (max-width: 500px) {
+    .noticias {
+      grid-template-columns: 1fr;
+    }
+
+  }
