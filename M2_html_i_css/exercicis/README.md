@@ -1,5 +1,11 @@
-#Converteix un Wireframe.psd en una pàgina HTML i aplicar el grafisme adient.
-
+## HTML i CSS
+# Converteix un Wireframe.psd en una pàgina HTML i aplicar el grafisme adient.
+# Durada: 2-3 dies
+# Objectius
+- Capacitat per adaptar el disseny provinent d'un PSD
+- Treballar amb HTML Semàntic
+- Codi estructurat
+- Fidelització de les mides i marges del disseny inicial.
 
 ## Exercici 1
 Aquesta tasca intenta reflectir el que ens trobem habitualment en el flux de treball d'una empresa web. Els pas del disseny formal al codi HTML/CSS.
