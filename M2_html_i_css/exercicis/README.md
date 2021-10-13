@@ -1,6 +1,6 @@
 ## Exercici HTML i CSS
 Converteix un Wireframe.psd en una pàgina HTML i aplicar el grafisme adient.  
-![imatge](https://github.com/amarcilla/vuejs/blob/main/M2_html_i_css/exercicis/wireframe.psd){width='100px'}
+![https://github.com/amarcilla/vuejs/blob/main/M2_html_i_css/exercicis/wireframe.psd](https://github.com/amarcilla/vuejs/blob/main/M2_html_i_css/exercicis/wireframe.psd){width='100px'}
 Durada: 2-3 dies
 
 ## Objectius
