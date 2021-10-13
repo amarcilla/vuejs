@@ -1,5 +1,6 @@
 ## Exercici HTML i CSS
 Converteix un Wireframe.psd en una pàgina HTML i aplicar el grafisme adient.  
+![](https://github.com/amarcilla/vuejs/blob/main/M2_html_i_css/exercicis/wireframe.psd){width='100px'}
 Durada: 2-3 dies
 
 ## Objectius
@@ -12,7 +13,6 @@ Durada: 2-3 dies
 Aquesta tasca intenta reflectir el que ens trobem habitualment en el flux de treball d'una empresa web. Els pas del disseny formal al codi HTML/CSS.
 
 Partirem d'un Wireframe aportat pel dissenyador, i haurem de prendre les mides i convertir-ho en una pàgina HTML formal. Els aspectes que es valoraran seran:
-
 1. Estructura d'arxius: només necessitem la pàgina html inicial, l'arxiu CSS i les imatges que utilitzis.
 2. Codificació HTML semàntic
 3. La pàgina ha de funcionar en format escriptori només.
