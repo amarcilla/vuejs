@@ -1,5 +1,5 @@
 ## Exercici HTML i CSS
-Converteix un Wireframe.psd en una pàgina HTML i aplicar el grafisme adient.
+Converteix un Wireframe.psd en una pàgina HTML i aplicar el grafisme adient.  
 Durada: 2-3 dies
 
 ## Objectius
