@@ -1,0 +1,116 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+    
+.padre {
+    display: flex;
+    /* en columnas y q se adapte a la dimension */
+    flex-flow: column nowrap;
+    background-color: #ffffff;
+    /* lo pone en otra linia cuando considere oportuno segun tamaños  */
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+
+.header{
+   background: #000; 
+   display: flex;
+   /* en columnas y q se adapte a la dimension */
+   flex-flow: column nowrap;
+}
+   .menu {
+        background: #2d4059; 
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px ;
+        align-items: center;
+    }
+        .logo{
+            background: #ea5455; 
+            flex: 1 1 auto;
+            height: 30px ;
+        }
+
+        .nav{
+            background: #ea5455; 
+            /* esta columna es 5 veces mas grande que el resto */
+            flex: 5 1 auto;
+            height: 30px ;
+        }
+
+        .social{
+            background: #ea5455; 
+            flex: 1 1 auto;
+            height: 30px ;
+        }
+    .texto-principal{
+        background: #f07b3f;         
+    }
+        h1{
+            background: #FFD460;     
+        }
+
+
+.section{
+  background: #000 ;  
+  display: flex;
+}
+    .articulos{
+        background: #4e4e6a; 
+        display: flex;
+        flex: 2 1 auto;
+        /* que la columna baixi si cal  */
+        flex-flow: row wrap;     
+    }
+        .article{
+            background: #1f6cb0; 
+            display: flex;
+            /* cada un dels articles que ocupi el 40%... i com li hem ficat wrap baixarà  */
+            flex: 1 1 40%;   
+        }
+
+        .navegacion{
+            background: #70a3c4; 
+            /* possem 100 pq ocupi tota la fila  */
+            flex: 1 1 100%;  
+        }
+
+    .aside{
+        background: #f73f52; 
+        flex: 1 1 auto;        
+    }
+        .publicidad{
+            background: #ffea85; 
+        }
+
+.footer{
+    background: #000 ;  
+    display: flex;
+    justify-content: center; 
+}
+  .pie{
+    background: #e6af2e ;
+    width: 100%;         
+  }
+
+
+  @media all and (max-width: 800px ){
+     .section{
+         background: yellow ;  
+         flex-direction: column;         
+     }
+     
+     .menu{
+         height: auto;
+     }
+
+     .aside{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+     }
+  }
+
+  
