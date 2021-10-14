@@ -11,6 +11,9 @@ Haurem de començar a preparar adaptació a diferents dispositius, pel que haure
 Seguint amb el projecte anterior, fes la versió tauleta tal com indica la captura següent:
 ![imatge](https://github.com/amarcilla/vuejs/blob/main/M03_Wireframe_Flex/imatgesGIT/exercici2.gif) 
 
+## Exercici 3
+Com el cas anterior, ara hauràs de fer l'adaptació a versió Mobile.
+![imatge](https://github.com/amarcilla/vuejs/blob/main/M03_Wireframe_Flex/imatgesGIT/exercici3.gif) 
 
 # Recursos
 ## chuleta molt bona 
