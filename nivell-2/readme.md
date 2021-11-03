@@ -36,8 +36,11 @@ En aquest exercici hauràs d'afegir l'apartat dels articles seguint aquest grafi
 
 # Recursos
 
-## Video que he seguit
+## Video que he seguit x flex
 https://www.youtube.com/watch?v=6xfhD0t5IdU&list=PLNGy7jWL6QFmTmS8azq1HRa1FIXFwRI95&index=13
+
+## Video que he seguit per web
+https://www.youtube.com/watch?v=Q2imkhmhOFo&t=3239s
 
 ## chuleta molt bona 
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/

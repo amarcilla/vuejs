@@ -1,0 +1,193 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    color: #000;
+    font-size: 16px;
+    font-family: 'oswald', sans-serif;
+}
+
+ul{
+   list-style: none; 
+}
+
+a{
+ color: black;
+ text-decoration: none;
+}
+
+.padre{
+    width: 90%;
+    margin: auto;
+}
+
+.nav-menu{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px ;
+    padding:20px 0 ;
+}
+
+.nav-brand{
+   width:100px; 
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    padding: 10px;
+}
+
+.menu ul.nav-menu{
+    flex:1;
+    margin-left: 20px;
+}
+    
+.padre {
+    display: flex;
+    /* en columnas y q se adapte a la dimension */
+    flex-flow: column nowrap;
+    background-color: #ffffff;
+    /* lo pone en otra linia cuando considere oportuno segun tamaños  */
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+
+.header{
+   background: #000; 
+   display: flex;
+   /* en columnas y q se adapte a la dimension */
+   flex-flow: column nowrap;
+}
+   .menu {
+        background:white; 
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px ;
+        align-items: center;
+    }
+        .logo{
+
+            flex: 1 1 auto;
+        }
+
+        .nav{
+            background: #ea5455; 
+            /* esta columna es 5 veces mas grande que el resto */
+            flex: 5 1 auto;
+        }
+
+        .social{
+            background: #ea5455; 
+            flex: 1 1 auto;
+        }
+    .texto-principal{
+        background: #f07b3f;         
+    }
+        h1{
+            background: #FFD460;     
+        }
+
+
+.section{
+  background: #000 ;  
+  display: flex;
+}
+    .articulos{
+        background: #4e4e6a; 
+        display: flex;
+        flex: 2 1 auto;
+        /* que la columna baixi si cal  */
+        flex-flow: row wrap;     
+    }
+        .article{
+            background: #1f6cb0; 
+            display: flex;
+            /* cada un dels articles que ocupi el 40%... i com li hem ficat wrap baixarà  */
+            flex: 1 1 40%;   
+        }
+
+        .navegacion{
+            background: #70a3c4; 
+            /* possem 100 pq ocupi tota la fila  */
+            flex: 1 1 100%;  
+        }
+
+    .aside{
+        background: #f73f52; 
+        flex: 1 1 auto;        
+    }
+        .publicidad{
+            background: #ffea85; 
+        }
+
+.footer{
+    background: #000 ;  
+    display: flex;
+    justify-content: center; 
+}
+  .pie{
+    background: #e6af2e ;
+    width: 100%;         
+  }
+
+/*  de 0 a 1024px... nos hará estos estilos */
+  @media all and  (max-width: 1024px ){
+    .section{
+        background:#e6af2e;
+        /* quan el width sigui< 800, que vagi de top a bottom. row=<td>, column=<tr> */
+        flex-direction: column;
+    }        
+
+    .aside{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+    }
+ }
+
+ @media all and (max-width: 375px ){
+    .section{
+        background:#e6af2e;
+        /* quan el width sigui< 800, que vagi de top a bottom. row=<td>, column=<tr> */
+        flex-direction: column;
+    }        
+
+   .menu{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      flex-basis: max-content;
+   }
+
+   .logo{
+       width: 100%;
+    }
+
+    .nav{
+        width: 100%;
+    }
+
+    .social{
+        width: 100%;
+    }
+
+     
+   .articulos{
+       flex-direction: column;
+   }
+
+
+
+  
+}
+
+  

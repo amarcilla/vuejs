@@ -30,20 +30,17 @@
         .logo{
             background: #ea5455; 
             flex: 1 1 auto;
-            height: 30px ;
         }
 
         .nav{
             background: #ea5455; 
             /* esta columna es 5 veces mas grande que el resto */
             flex: 5 1 auto;
-            height: 30px ;
         }
 
         .social{
             background: #ea5455; 
             flex: 1 1 auto;
-            height: 30px ;
         }
     .texto-principal{
         background: #f07b3f;         
@@ -96,21 +93,29 @@
   }
 
 
-  @media all and (max-width: 800px ){
-     .section{
-         background: yellow ;  
-         flex-direction: column;         
-     }
-     
-     .menu{
-         height: auto;
-     }
-
-     .aside{
-        display: flex;
-        justify-content: center;
+  @media all and  (max-width: 1024px ){
+    .section{
+        background:#e6af2e;
+        /* quan el width sigui< 800, que vagi de top a bottom. row=<td>, column=<tr> */
         flex-direction: column;
-     }
-  }
+    }        
 
+    .aside{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+    }
+ }
+
+ @media all and (max-width: 600px ){
+   .articulos{
+       flex-direction: column;
+   }
+}
+
+@media all and (max-width: 400px ){
+    .aside {
+        flex-direction: column;
+    }
+}
   

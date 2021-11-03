@@ -1,0 +1,139 @@
+* {
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+    
+.padre {
+    display: flex;
+    /* en columnas y q se adapte a la dimension */
+    flex-flow: column nowrap;
+    background-color: #ffffff;
+    /* lo pone en otra linia cuando considere oportuno segun tamaños  */
+    flex-wrap: wrap ;
+    justify-content: center;
+    max-width:1200px ;
+}
+
+.header{
+   background:#000;
+   display: flex;
+      /* en columnas y q se adapte a la dimension */
+   flex-flow: column nowrap;
+}
+
+   .menu {
+        background: #2d4059; 
+        display: flex;
+        /* Todos los items flex en la misma linea */
+        flex-flow: row nowrap;
+        height: 100px ;
+        align-items: center;
+    }
+        .logo{
+            background: #ea5455; 
+            /* flex-grow | flex-shrink | flex-basis */          
+            /* flex-grow: Q cantidad de espacio debe ocupar el elemento dentro del contenedor flexible.*/
+            /*       1: es decir, el tamaño es proporcional a 1.*/
+            /* flex-shrink: Factor de contracción de flexión de un elemento flexible.*/
+            /*       1: se va a achicar 1 vez más rápido que sus hermanos.*/
+            /* flex-basis: tamaño inicial de un elemento flexible, determina tamaño caja a no ser que se haya especificado de otra forma usando box-sizing.*/
+            /*       auto, es decir, su tamaño inicial se calculara automáticamente.*/
+            flex: 1 1 auto;
+        }
+
+        .nav{
+            background: #ea5455; 
+              /*  flex-grow 5: es decir, el tamaño es proporcional a 5.*/ 
+              /* flex-shrink 1: se va a achicar 1 vez más rápido que sus hermanos  * /
+              /* flex-basis: auto, su tamaño inicial se calculara automáticamente */
+            flex: 5 1 auto;
+        }
+
+        .social{
+            background: #ea5455; 
+            flex: 1 1 auto;
+        }
+
+
+
+    .texto-principal{
+        background: #f07b3f;         
+    }
+        h1{
+            background: #FFD460;     
+        }
+
+
+.section{
+  background: #000 ;  
+  display: flex;
+}
+    .articulos{
+        background: #4e4e6a; 
+        display: flex;
+        flex: 2 1 auto;
+        /* que la columna baixi si cal  */
+        flex-flow: row wrap;     
+    }
+        .article{
+            background: #1f6cb0; 
+            display: flex;
+            /* cada un dels articles que ocupi el 40%... i com li hem ficat wrap baixarà  */
+            flex: 1 1 40%;   
+        }
+
+        .navegacion{
+            background: #70a3c4; 
+            /* possem 100 pq ocupi tota la fila  */
+            flex: 1 1 100%;  
+        }
+
+        
+    .aside{
+        background: #f73f52; 
+        flex: 1 1 auto;        
+    }
+        .publicidad{
+            background: #ffea85; 
+        }
+
+.footer{
+    background: #000 ;  
+    display: flex;
+    justify-content: center; 
+}
+  .pie{
+    background: #e6af2e ;
+    width: 300px;     
+    
+  }
+
+
+  @media all and (max-width: 800px ){
+     .section{
+         flex-direction: column;
+     }
+     
+     .menu{
+         flex-direction: column;
+         height: auto;
+     }
+
+     .aside{
+        display: flex;
+        justify-content: center;
+     }
+  }
+
+  @media all and (max-width: 600px ){
+    .articulos{
+        flex-direction: column;
+    }
+ }
+
+ @media all and (max-width: 400px ){
+     .aside {
+         flex-direction: column;
+     }
+ }
