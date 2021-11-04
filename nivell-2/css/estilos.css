@@ -29,7 +29,6 @@ a{
     flex-flow: column nowrap;
     background-color: #ffffff;
     /* lo pone en otra linia cuando considere oportuno segun tamaños  */
-    flex-wrap: wrap ;
     justify-content: center;
 }
 
@@ -40,10 +39,6 @@ a{
     flex-flow: column nowrap;
  }
 
-/* LOGO */
-.logo {
-   width:20px; 
-}
 
 /* MENU */
 .menu{
@@ -56,57 +51,61 @@ a{
     padding:20px 0 ;
 }
 
-
-.menu ul{
-    display: flex;
+/*  logo */
+.logo{      
+    display: flex;   
+    border-style: solid;
+    width:100px ;
+    flex: 1 1 auto;
 }
 
-.menu ul li{
+/*  MENU */
+.menu ul.nav-menu{
+    display: flex;
+    /* esta columna es 5 veces mas grande que el resto */
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+}
+
+
+.menu ul.nav-menu li{
     padding: 10px;
 }
 
-.menu ul li a {   
+.menu ul.nav-menu li a {   
     padding: 2px;
 }
 
 /* Les opcions cliclables han de tenir efecte roll-over.*/
-.menu ul li a:hover {
+.menu ul.nav-menu li a:hover {
     /* Si passem per sobre que subratlli el text.*/
     border-bottom: 2px solid black;
 }
 
-.menu ul.nav-menu{
-    flex:1;
-    margin-left: 20px;
+
+/*  SOCIAL */
+.menu ul.social{
+    display: flex;
+    /* esta columna es 5 veces mas grande que el resto */
+    flex: 5 1 auto;
+    border-style: solid;
 }
-    
 
+/* icons */
+.menu ul.social i {
+    border: 1px solid;
+}
 
-        .logo{            
-            flex: 1 1 auto;
-        }
-
-        .logo img {            
-            width: 100px;
-        }
-
-        .nav-menu{
-            /* esta columna es 5 veces mas grande que el resto */
-            flex: 5 1 auto;
-        }
-
-        .social{
-            flex: 1 1 auto;
-        }
-
-    .texto-principal{
+.texto-principal{
          text-align: center;
          color: #ea5455;
-         color-adjust:;
-    }
-        h1{
-            
+        
         }
+
+h1{
+      }
 
 
 .section{
