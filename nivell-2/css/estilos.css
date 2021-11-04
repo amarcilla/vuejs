@@ -20,38 +20,10 @@ a{
  text-decoration: none;
 }
 
-.padre{
+
+.padre {
     width: 90%;
     margin: auto;
-}
-
-.nav-menu{
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px ;
-    padding:20px 0 ;
-}
-
-.nav-brand{
-   width:100px; 
-}
-
-.nav-menu ul{
-    display: flex;
-}
-
-.nav-menu ul li{
-    padding: 10px;
-}
-
-.menu ul.nav-menu{
-    flex:1;
-    margin-left: 20px;
-}
-    
-.padre {
     display: flex;
     /* en columnas y q se adapte a la dimension */
     flex-flow: column nowrap;
@@ -62,38 +34,78 @@ a{
 }
 
 .header{
-   background: #000; 
-   display: flex;
-   /* en columnas y q se adapte a la dimension */
-   flex-flow: column nowrap;
-}
-   .menu {
-        background:white; 
-        display: flex;
-        flex-flow: row nowrap;
-        height: 100px ;
-        align-items: center;
-    }
-        .logo{
+    display: flex;
+    background: url("/images/fondo.jpg") no-repeat center center/cover;
+    /* en columnas y q se adapte a la dimension */
+    flex-flow: column nowrap;
+ }
 
+/* LOGO */
+.logo {
+   width:20px; 
+}
+
+/* MENU */
+.menu{
+    flex-flow: row nowrap;
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px ;
+    padding:20px 0 ;
+}
+
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    padding: 10px;
+}
+
+.menu ul li a {   
+    padding: 2px;
+}
+
+/* Les opcions cliclables han de tenir efecte roll-over.*/
+.menu ul li a:hover {
+    /* Si passem per sobre que subratlli el text.*/
+    border-bottom: 2px solid black;
+}
+
+.menu ul.nav-menu{
+    flex:1;
+    margin-left: 20px;
+}
+    
+
+
+        .logo{            
             flex: 1 1 auto;
         }
 
-        .nav{
-            background: #ea5455; 
+        .logo img {            
+            width: 100px;
+        }
+
+        .nav-menu{
             /* esta columna es 5 veces mas grande que el resto */
             flex: 5 1 auto;
         }
 
         .social{
-            background: #ea5455; 
             flex: 1 1 auto;
         }
+
     .texto-principal{
-        background: #f07b3f;         
+         text-align: center;
+         color: #ea5455;
+         color-adjust:;
     }
         h1{
-            background: #FFD460;     
+            
         }
 
 
