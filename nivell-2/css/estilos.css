@@ -54,34 +54,39 @@ a{
 /*  logo */
 .logo{      
     display: flex;   
-    border-style: solid;
     width:100px ;
     flex: 1 1 auto;
 }
 
 /*  MENU */
 .menu ul.nav-menu{
-    display: flex;
-    /* esta columna es 5 veces mas grande que el resto */
-    flex: 1 1 auto;
+    display: flex;    
     align-items: center;
     justify-content: center;
-    border-style: solid;
 }
 
+.menu ul.nav-menu i{
+   color:grey;
+   padding: 0;
+   margin: 0;
+}
 
 .menu ul.nav-menu li{
-    padding: 10px;
+    display: flex;
+    margin: 15;
+    padding: 0;
+    align-items: center;
 }
 
 .menu ul.nav-menu li a {   
     padding: 2px;
+    color:grey;
 }
 
 /* Les opcions cliclables han de tenir efecte roll-over.*/
 .menu ul.nav-menu li a:hover {
     /* Si passem per sobre que subratlli el text.*/
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 
 
@@ -90,70 +95,103 @@ a{
     display: flex;
     /* esta columna es 5 veces mas grande que el resto */
     flex: 5 1 auto;
-    border-style: solid;
 }
 
 /* icons */
 .menu ul.social i {
-    border: 1px solid;
+    color:grey;
 }
 
 .texto-principal{
-         text-align: center;
-         color: #ea5455;
-        
-        }
+    text-align: center;
+    color: #ea5455;
+    opacity: .5;   
+}
 
 h1{
+    
       }
 
 
 .section{
-  background: #000 ;  
   display: flex;
+  margin: 0;
+  padding: 0;
 }
     .articulos{
-        background: #4e4e6a; 
-        display: flex;
-        flex: 2 1 auto;
-        /* que la columna baixi si cal  */
-        flex-flow: row wrap;     
+        background: #e4e4e7; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* flex: 2 1 auto;
+        flex-flow: row wrap;     */
     }
+
+    .articulos img{
+        width:100% ;
+        height: 180px;
+        margin: 0;
+        padding: 5;
+    }
+
+    .articulos h3{
+        background: #ea5455;
+        color: white;
+        font-size: 20px;        
+    }
+
+    .articulos a{
+        padding: 10px 0;
+        color:black;
+        flex: 2 1 auto;
+    }
+
+    .articulos a:hover{
+        text-decoration: underline;
+    }
+
         .article{
-            background: #1f6cb0; 
+            background: #f3f4f5;
             display: flex;
             /* cada un dels articles que ocupi el 40%... i com li hem ficat wrap baixarà  */
-            flex: 1 1 40%;   
+            flex-flow: column nowrap; 
+            padding: 0;
+        }
+
+        .article p{
+            column-count:2;
         }
 
         .navegacion{
-            background: #70a3c4; 
             /* possem 100 pq ocupi tota la fila  */
-            flex: 1 1 100%;  
+            flex: 100%;  
         }
 
     .aside{
-        background: #f73f52; 
-        flex: 1 1 auto;        
+        background:  #e4e4e7; 
+        flex: 1 1 auto;    
     }
         .publicidad{
-            background: #ffea85; 
+
         }
 
+    .navegacion{
+        
+    }
+
 .footer{
-    background: #000 ;  
+    background: #f3f4f5;
     display: flex;
-    justify-content: center; 
+    justify-content: center;        
 }
   .pie{
-    background: #e6af2e ;
-    width: 100%;         
+    background: #f3f4f5;      
+    font-size: small;
   }
 
 /*  de 0 a 1024px... nos hará estos estilos */
   @media all and  (max-width: 1024px ){
     .section{
-        background:#e6af2e;
+
         /* quan el width sigui< 800, que vagi de top a bottom. row=<td>, column=<tr> */
         flex-direction: column;
     }        
@@ -167,7 +205,6 @@ h1{
 
  @media all and (max-width: 375px ){
     .section{
-        background:#e6af2e;
         /* quan el width sigui< 800, que vagi de top a bottom. row=<td>, column=<tr> */
         flex-direction: column;
     }        
