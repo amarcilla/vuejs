@@ -10,18 +10,18 @@ Apartir del wireframe que t'aportem en format png, hauràs de fer la maquetació
 Haurem de començar a preparar adaptació a diferents dispositius, pel que haurem de tenir clar el concepte de Media Query. Fixa't que hi ha canvi de distribució i color d'alguns elements.
 
 Seguint amb el projecte anterior, fes la versió tauleta tal com indica la captura següent:
-![imatge](https://github.com/amarcilla/vuejs/blob/main/M03_Wireframe_Flex/imatgesGIT/exercici2.gif) 
+![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-1/imatgesGIT/exercici2.gif) 
 
 ## Exercici 3
 Com el cas anterior, ara hauràs de fer l'adaptació a versió Mobile.  
-![imatge](https://github.com/amarcilla/vuejs/blob/main/M03_Wireframe_Flex/imatgesGIT/exercici3.gif) 
+![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-1/imatgesGIT/exercici3.gif) 
 
 
 # Nivell 2
 
 ## Exercici 4
 En aquesta part volem treballar la capçalera i el grafisme. Hauràs d'afegir icones i logotip, a més de fer una imatge de fons. Substitueix els quadrants respectius perquè la nova capçalera tingui l'aspecte d'aquest web de turisme al japó:  
-![imatge](https://github.com/amarcilla/vuejs/blob/main/M03_Wireframe_Flex/imatgesGIT/exercici4.gif) 
+![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-1/imatgesGIT/exercici4.gif) 
 
 És important que tinguis en consideració el següent:  
 - Les opcions cliclables han de tenir efecte roll-over.
@@ -31,7 +31,7 @@ En aquesta part volem treballar la capçalera i el grafisme. Hauràs d'afegir ic
 
 ## Exercici 5
 En aquest exercici hauràs d'afegir l'apartat dels articles seguint aquest grafisme:  
-![imatge](https://github.com/amarcilla/vuejs/blob/main/M03_Wireframe_Flex/imatgesGIT/exercici5.gif) 
+![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-1/imatgesGIT/exercici5.gif) 
 
 
 # Recursos
