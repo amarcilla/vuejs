@@ -1,0 +1,38 @@
+//primer declarem les variables que necessitarem
+// aquestes són variables per defecte de boostrap 
+$primary: #c29938; 
+$light: #fbf5e5;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+//declarem un mapa de variables propies
+// Volem afegir aquest mapa de colors a un mapa que ja existeix del boostrap: $theme-colors: 
+// scss-docs-start theme-colors-map
+/*$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default; */
+
+//aquest colors son propis
+$custom-theme-colors: (
+  "altlight": #f2ebfa,
+  "altdark": #522192
+);
+
+//afegim els colors propis als de boostrap
+$theme-colors: map-merge($custom-theme-colors, $theme-colors );
+
+//importem tot el modul
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+
+
+
