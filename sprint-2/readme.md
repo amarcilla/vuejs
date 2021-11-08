@@ -15,5 +15,5 @@ En disseny en mòbil ha de quedar així:
 ![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-2/imagesGIT/desktop-preview.jpg) 
 
 ![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-2/imagesGIT/tab-2-design.jpg) 
-![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-2/imagesGIT/tab-3-design.jpg 
+![imatge](https://github.com/amarcilla/vuejs/blob/main/sprint-2/imagesGIT/tab-3-design.jpg )
 
