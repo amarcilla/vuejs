@@ -7,16 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercici 1</title>
     <link rel="stylesheet" href="/css/main.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/main.min.css.map">
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 
 <body>
+
+    <!-- ******** -->
+    <!-- MENÚ -->
+    <!-- ******** -->
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="container">
@@ -43,8 +50,10 @@
             </div>
         </nav>
 
-
-        <section class="container border">
+        <!-- ******** -->
+        <!-- CABECERA -->
+        <!-- ******** -->
+        <section class="container">
             <div class="row pt-5 mt-5">
                 <div class="col justify-content-center align items-center">
                     <div class="card-body">
@@ -61,26 +70,36 @@
             </div>
         </section>
 
-
+        <!-- ***************** -->
+        <!-- PESTAÑAS FEATURES -->
+        <!-- ***************** -->
         <section class="container border pt-5 mt-5  ">
             <div class="col-12 justify-content-center">
                 <h2 class="row card-title justify-content-center border">Features</h2>
                 <p class="row col-5 offset-md-3  ">Our aim is to make it quick and easy for you to access your favourite
                     websites. Your bookmarks sync between your devices so you can access them on the go.</p>
                 <ul class="nav nav-tab justify-content-center align items-center" id="myTab">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">simple Bookmarking</a>
+                    <li>
+                        <a class="nav-link" data-toggle="tab" href="#simple" id="tab_simple" aria-current="page">
+                            simple Bookmarking
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Speedy searching</a>
+                    <li>
+                        <a class="nav-link" data-toggle="tab" href="#facil" id="tab_facil">
+                            Speedy searching
+                        </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">easy sharing</a>
+                    <li>
+                        <a class="nav-link" data-toggle="tab" href="#inteligente" id="tab_inteligente">
+                            easy sharing
+                        </a>
                     </li>
                 </ul>
+
                 <div class="tab-content">
-                    <div class="tab-pane active border" id="simple">
-                        <div class="card-body row border">
+                    <!-- pestanya 1.Simple -->
+                    <div class="tab-pane active" id="simple">
+                        <div class="card-body row">
                             <div class="col-6">
                                 <image src="img/illustration-features-tab-1.svg" class="img-fluid"></image>
                             </div>
@@ -93,42 +112,70 @@
                         </div>
                     </div>
 
-                </div>
-                <div class="tab-pane" id="profile">
-
-                    <div class="card-body row border">
-                        <div class="col-6">
-                            <image src="img/illustration-features-tab-2.svg" class="img-fluid"></image>
-                        </div>
-                        <div class="col-6">
-                            <h1 class="card-title ">Intelligent search</h1>
-                            <p class="card-text">Our powerful search feature will help you find saved sites in no time
-                                at all. No need to trawl through all of your bookmarks.</p>
-                            <button type="card-button" class="btn btn-primary">More info</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="messages">
-                   
-                    <div class="card-body row border">
-                        <div class="col-6">
-                            <image src="img/illustration-features-tab-3.svg" class="img-fluid"></image>
-                        </div>
-                        <div class="col-6">
-                            <h1 class="card-title ">Share your bookmarks</h1>
-                            <p class="card-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                            <button type="card-button" class="btn btn-primary">More info</button>
+                    <!-- pestanya 2. facil -->
+                    <div class="tab-pane" id="facil">
+                        <div class="card-body row">
+                            <div class="col-6">
+                                <image src="img/illustration-features-tab-3.svg" class="img-fluid"></image>
+                            </div>
+                            <div class="col-6">
+                                <h1 class="card-title ">Share your bookmarks</h1>
+                                <p class="card-text">Easily share your bookmarks and collections with others. Create a
+                                    shareable link that you can send at the click of a button.</p>
+                                <button type="card-button" class="btn btn-primary">More info</button>
+                            </div>
                         </div>
                     </div>
 
+
+                    <!-- pestanya 3.Inteligente -->
+                    <div class="tab-pane" id="inteligente">
+                        <div class="card-body row border">
+                            <div class="col-6">
+                                <image src="img/illustration-features-tab-2.svg" class="img-fluid"></image>
+                            </div>
+                            <div class="col-6">
+                                <h1 class="card-title ">Intelligent search</h1>
+                                <p class="card-text">Our powerful search feature will help you find saved sites in no
+                                    time
+                                    at all. No need to trawl through all of your bookmarks.</p>
+                                <button type="card-button" class="btn btn-primary">More info</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- ***************** -->
+        <!-- DOWNLOADS -->
+        <!-- ***************** -->
+        <section class="container pt-5 mt-5" id="downloads">
+            <div class="col-12 justify-content-center">
+                <h2 class="row card-title justify-content-center">Download the extension</h2>
+                <p class="row col-5 offset-md-3  ">We've got more browsers in the pipeline. Please do let us know if
+                    you've got a favourite you'd like prioritize</p>
+                <div class="container border" >
+                    <div class=row>                        
+                        <div class="col-3 offset-md-2">dddd</div>
+                        <div class=col-3>3dddd</div>
+                        <div class=col-3>d3ddd</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
     </div>
-    </section>
-    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
