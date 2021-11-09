@@ -7,57 +7,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercici 1</title>
     <link rel="stylesheet" href="/css/main.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <img src="img/logo-bookmark.svg" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse offset-md-6" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-disabled="true">contact</a>
+                        </li>
+                        <button type="button" class="btn btn-danger">Login</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="container border">
+            <div class="row pt-5 mt-5">
+                <div class="col justify-content-center align items-center">
+                    <div class="card-body">
+                        <h1 class="card-title">A simple bookmark manager</h1>
+                        <p class="card-text">A clean and simple interface to organize your favourite websites. Open a
+                            new browser tab and see your sites load instantly. Try it for free.</p>
+                        <button type="button" class="btn btn-primary">Get it on Chrome</button>
+                        <button type="button" class="btn btn-light">Get it on Firebox</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <image src="img/illustration-hero.svg" class="img-fluid"></image>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container border pt-5 mt-5  ">
+            <div class="col-12 justify-content-center">
+                <h2 class="row card-title justify-content-center border">Features</h2>
+                <p class="row col-5 offset-md-3  ">Our aim is to make it quick and easy for you to access your favourite
+                    websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+                <ul class="nav nav-tab justify-content-center align items-center" id="myTab">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">simple Bookmarking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="#">Speedy searching</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">easy sharing</a>
                     </li>
                 </ul>
-                    <button class="btn btn-outline-success" type="submit">Login</button>
-            </div>
-        </div>
-    </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active border" id="simple">
+                        <div class="card-body row border">
+                            <div class="col-6">
+                                <image src="img/illustration-features-tab-1.svg" class="img-fluid"></image>
+                            </div>
+                            <div class="col-6">
+                                <h1 class="card-title ">Bookmark in one click</h1>
+                                <p class="card-text">Organize your bookmarks however you like. Our simple drag-and-drop
+                                    interface gives you complete control over how you manage your favourite sites.</p>
+                                <button type="card-button" class="btn btn-primary">More info</button>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            Column
-          </div>
-          <div class="col">
-            Column
-          </div>
-          <div class="col">
-            Column
-          </div>
-        </div>
-      </div>
+                </div>
+                <div class="tab-pane" id="profile">
+
+                    <div class="card-body row border">
+                        <div class="col-6">
+                            <image src="img/illustration-features-tab-2.svg" class="img-fluid"></image>
+                        </div>
+                        <div class="col-6">
+                            <h1 class="card-title ">Intelligent search</h1>
+                            <p class="card-text">Our powerful search feature will help you find saved sites in no time
+                                at all. No need to trawl through all of your bookmarks.</p>
+                            <button type="card-button" class="btn btn-primary">More info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="messages">
+                   
+                    <div class="card-body row border">
+                        <div class="col-6">
+                            <image src="img/illustration-features-tab-3.svg" class="img-fluid"></image>
+                        </div>
+                        <div class="col-6">
+                            <h1 class="card-title ">Share your bookmarks</h1>
+                            <p class="card-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+                            <button type="card-button" class="btn btn-primary">More info</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
