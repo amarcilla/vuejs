@@ -24,12 +24,12 @@
 <body>
 
 
-  <div class="content">
+  <div class="content ">
 
     <!-- ******** -->
     <!-- MENÚ -->
     <!-- ******** -->
-    <section class="container">
+    <section class="container " id="menu">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <img src="images/logo-bookmark.svg" alt="">
@@ -79,9 +79,9 @@
     <!-- ***************** -->
     <!-- PESTAÑAS FEATURES -->
     <!-- ***************** -->
-    <div class="container" id="features">
+    <section class="container m-10" id="features">
       <h1 class="my-5 text-center">Features</h1>
-      <p class="row col-5 offset-md-3 text-center">Our aim is to make it quick and easy for you to access your
+      <p class="row col-6 offset-md-3 text-center">Our aim is to make it quick and easy for you to access your
         favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
       <div class="d-flex carousel-nav">
         <a href="#" class="col active">Simple Bookmarking</a>
@@ -132,35 +132,150 @@
           </div>
         </div> <!-- .pestanya 3 -->
       </div>
+    </section>
 
-       <!-- ***************** -->
-        <!-- DOWNLOADS -->
-        <!-- ***************** -->
-        <section class="container" id="downloads">
-          <div class="col-12 justify-content-center">
-            <h1 class="row card-title justify-content-center">Download the extension</h1>
-            <p class="row col-5 offset-md-3 text-center ">We've got more browsers in the pipeline. Please do let us
-              know if
-              you've got a favourite you'd like prioritize</p>
-            <div class="container border">
-              <div class=row>
-                <div class="col-3 offset-md-2">dddd</div>
-                <div class=col-3>3dddd</div>
-                <div class=col-3>d3ddd</div>
+    <!-- ***************** -->
+    <!-- DOWNLOADS -->
+    <!-- ***************** -->
+    <section class="container m-10" id="downloads">
+      <div class="row hidden-md-up justify-content-center ">
+        <div class="col-6 justify-content-center">
+          <h1 class="text-center">Download the extension</h1>
+          <p class="text-center">We've got more browsers in the pipeline. Please do let us
+            know if you've got a favourite you'd like prioritize</p>
+        </div>
+        <div class="row hidden-md-up  ">
+          <!-- chrome -->
+          <div class="col-md-4">
+            <div class="card shadow bg-white rounded">
+              <div class="card-body justify-content-center ">
+                <img src="images/logo-chrome.svg" alt="Image" class="img-fluid rounded mx-auto d-block">
+                <h4 class="card-title text-center">Add to chrome</h4>
+                <p class="card-text p-y-1 text-center">Minimun version 62</p>
+                <hr class="border-style: dotted;" />
+                <button type="card-button" class="btn btn-primary">Add & install extension</button>
               </div>
             </div>
           </div>
-        </section>
 
-    </div>
+          <!-- Firefox -->
+          <div class="col-md-4 ">
+            <div class="card shadow bg-white rounded">
+              <div class="card-body ">
+                <img src="images/logo-firefox.svg" alt="Image" class="img-fluid rounded mx-auto d-block">
+                <h4 class="card-title text-center">Add to Firefox</h4>
+                <p class="card-text p-y-1 text-center">Minimun version 55</p>
+                <hr class="border-style: dotted;" />
+                <button type="card-button" class="btn btn-primary">Add & install extension</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- opera -->
+          <div class="col-md-4">
+            <div class="card shadow bg-white rounded">
+              <div class="card-body ">
+                <img src="images/logo-opera.svg" alt="Image" class="img-fluid rounded mx-auto d-block">
+                <h4 class="card-title text-center">Add to opera</h4>
+                <p class="card-text p-y-1 text-center">Minimun version 46</p>
+                <hr class="border-style: dotted;" />
+                <button type="card-button" class="btn btn-primary">Add & install extension</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************** -->
+    <!-- faqs - acordion-->
+    <!-- ***************** -->
+    <section class="container border" id="faqs">
+      <div class="row hidden-md-up justify-content-center">
+        <div class="col-6 justify-content-center">
+          <h1 class="text-center">Frequently asked questions</h1>
+          <p class="text-center">Here some of our FAQS. If you have any other questions you'd like answered please feel
+            free to email us</p>
+        </div>
+      </div>
+
+      <div class="row hidden-md-up justify-content-center">
+        <div class="wrapper">
+
+          <!-- bookmarks -->
+          <div class="accordion active">
+            <div class="accordion_tab active">
+              What is bookmark
+              <div class="accordion_arrow">
+                <img src="/images/faqs.png" alt="arrow">
+              </div>
+            </div>
+            <div class="accordion_content">
+              <p>A boormark is ...</p>
+            </div>
+          </div>
+
+
+          <!-- Request browser -->
+          <div class="accordion">
+            <div class="accordion_tab">
+              How I can request a new browser
+              <div class="accordion_arrow">
+                <img src="/images/faqs.png" alt="arrow">
+              </div>
+            </div>
+            <div class="accordion_content">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quis sed praesentium dolorem
+                hic
+                ipsam maiores magnam voluptatem deleniti sunt.</p>
+
+            </div>
+          </div>
+
+          <!-- mobile APP -->
+          <div class="accordion">
+            <div class="accordion_tab">
+              Is there a mobile app?
+              <div class="accordion_arrow">
+                <img src="/images/faqs.png" alt="arrow">
+              </div>
+            </div>
+            <div class="accordion_content">
+              <p>Mobile App</p>
+            </div>
+          </div>
+
+          <!-- mobile APP -->
+          <div class="accordion">
+            <div class="accordion_tab">
+              Waht about other Chromium browser?
+              <div class="accordion_arrow">
+                <img src="/images/faqs.png" alt="arrow">
+              </div>
+            </div>
+            <div class="accordion_content">
+              <p>Mobile App</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
 
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+
 </body>
 
 </html>
