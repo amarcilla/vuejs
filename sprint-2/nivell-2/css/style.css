@@ -211,7 +211,7 @@ hr {
 /*
 *
 * ==========================================
-* accordion
+footer
 * ==========================================
 *
 */
@@ -219,6 +219,3 @@ hr {
 #page-content {
   flex: 1 0 auto;
 }
-
-/* Other Classes for Page Styling */
-
