@@ -124,29 +124,25 @@ function calculateSubtotals() {
         clothes: 0
     };
 
-
-
-    alert(subtotals('grocery').value)
-
-    for (var i = 0; i < cartList.length - 1; i++) {
+    for (var i = 0; i < cartList.length ; i++) {
         switch (cartList[i].type) {
             case "grocery":
-                subtotals[grocery] = subtotals[grocery] + cartList[i].price;
+                subtotals["grocery"] = subtotals["grocery"] + cartList[i].price;
                 break;
             case "beauty":
-                subtotals[beauty] = subtotals[beauty] + cartList[i].price;
+                subtotals["beauty"] = subtotals["beauty"] + cartList[i].price;
                 break;
             case "clothes":
-                subtotals[clothes] = subtotals[clothes] + cartList[i].price;
+                subtotals["clothes"] = subtotals["clothes"] + cartList[i].price;
                 break;
             default:
                 console.log("Hi ha hagut un error");
         }
     }
 
-    alert("grocery:" + subtotals[grocery]);
-    alert("beauty:" + subtotals[beauty]);
-    alert("clothes:" + subtotals[clothes]);
+    alert("grocery: " + subtotals["grocery"]);
+    alert("beauty: " + subtotals["beauty"]);
+    alert("clothes: " + subtotals["clothes"]);
 
 }
 
@@ -154,7 +150,7 @@ function calculateSubtotals() {
 function calculateTotal() {
     var total=0;
     // Calculate total price of the cart either using the "cartList" array
-    for (var i = 0; i < cartList.length - 1; i++) {
+    for (var i = 0; i < cartList.length ; i++) {
         total = total + cartList[i].price
     }
     alert("Total:" + total);
