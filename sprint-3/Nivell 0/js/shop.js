@@ -84,15 +84,12 @@ function buy(id) {
     // 1. Loop for to the array products to get the item to add to cart
     // 2. Add found product to the cartList array
 
-    //alert(products[id - 1].name);
-
     var total = 0;
+    //??? No entenc pq hem de fer el loop????
 
-    //??? No entenc pq hem de fer el loop
 
-    //alert(products[id-1]);
+    //Afegim el producte escollit a la carList
     cartList.push(products[id - 1]);
-
 
 
     // products.forEach(function (element, id, cartList) {
@@ -103,10 +100,13 @@ function buy(id) {
 
 // Exercise 2
 function cleanCart() {
+
+    //Abans de esborrar, revisem tots els elements que hi ha a la CardList
     for (var i = 0; i < cartList.length; i++) {
         alert(cartList[i].name);
     }
 
+    // Eliminem element per element'
     while (cartList.length > 0) {
         cartList.pop();
     }
@@ -124,7 +124,8 @@ function calculateSubtotals() {
         clothes: 0
     };
 
-    for (var i = 0; i < cartList.length ; i++) {
+    // calculem els subtotals depenent del tipus de compra
+    for (var i = 0; i < cartList.length; i++) {
         switch (cartList[i].type) {
             case "grocery":
                 subtotals["grocery"] = subtotals["grocery"] + cartList[i].price;
@@ -148,9 +149,9 @@ function calculateSubtotals() {
 
 // Exercise 4
 function calculateTotal() {
-    var total=0;
+    var total = 0;
     // Calculate total price of the cart either using the "cartList" array
-    for (var i = 0; i < cartList.length ; i++) {
+    for (var i = 0; i < cartList.length; i++) {
         total = total + cartList[i].price
     }
     alert("Total:" + total);
@@ -161,6 +162,25 @@ function calculateTotal() {
 function generateCart() {
     // Using the "cartlist" array that contains all the items in the shopping cart, 
     // generate the "cart" array that does not contain repeated items, instead each item of this array "cart" shows the quantity of product.
+
+    cart.push(cartList[0]);
+    //alert("afegim element a la cart " + cartList[0].id);
+
+    for (var i = 0; i < cartList.length; i++) {
+        for (var j = 0; j < cart.length; j++) {
+            //alert("lista original " + cartList[i].id + " llista nova " + cart[j].id);
+            if (cartList[i].id != cart[j].id) {
+                cart.push(cartList[i]);
+                //alert("afegim element a la cart " + cartList[i].id);
+            }
+        }
+    }
+
+    //VAlidem elements CArt
+    alert(cart.length)
+    for (var i = 0; i < cart.length; i++) {
+        alert(cartList[i].name);
+    }
 }
 
 // Exercise 6
