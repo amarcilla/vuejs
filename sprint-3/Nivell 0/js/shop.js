@@ -63,40 +63,102 @@ var cart = [];
 
 var subtotal = {
     grocery: {
-        value: 0, 
+        value: 0,
         discount: 0
     },
     beauty: {
-        value: 0, 
+        value: 0,
         discount: 0
     },
     clothes: {
-        value: 0, 
+        value: 0,
         discount: 0
     },
 };
 var total = 0;
 
+
+
 // Exercise 1
 function buy(id) {
     // 1. Loop for to the array products to get the item to add to cart
     // 2. Add found product to the cartList array
+
+    //alert(products[id - 1].name);
+
+    var total = 0;
+
+    //??? No entenc pq hem de fer el loop
+
+    //alert(products[id-1]);
+    cartList.push(products[id - 1]);
+
+
+
+    // products.forEach(function (element, id, cartList) {
+    //      //total += array[index] * index;
+    //      //alert(cartList[id].name);
+    // });
 }
 
 // Exercise 2
 function cleanCart() {
+    for (var i = 0; i < cartList.length; i++) {
+        alert(cartList[i].name);
+    }
 
+    while (cartList.length > 0) {
+        cartList.pop();
+    }
+
+    alert("llista esborrada");
 }
 
 // Exercise 3
 function calculateSubtotals() {
     // 1. Create a for loop on the "cartList" array 
     // 2. Implement inside the loop an if...else or switch...case to add the quantities of each type of product, obtaining the subtotals: subtotalGrocery, subtotalBeauty and subtotalClothes
+    var subtotals = {
+        grocery: 0,
+        beauty: 0,
+        clothes: 0
+    };
+
+
+
+    alert(subtotals('grocery').value)
+
+    for (var i = 0; i < cartList.length - 1; i++) {
+        switch (cartList[i].type) {
+            case "grocery":
+                subtotals[grocery] = subtotals[grocery] + cartList[i].price;
+                break;
+            case "beauty":
+                subtotals[beauty] = subtotals[beauty] + cartList[i].price;
+                break;
+            case "clothes":
+                subtotals[clothes] = subtotals[clothes] + cartList[i].price;
+                break;
+            default:
+                console.log("Hi ha hagut un error");
+        }
+    }
+
+    alert("grocery:" + subtotals[grocery]);
+    alert("beauty:" + subtotals[beauty]);
+    alert("clothes:" + subtotals[clothes]);
+
 }
 
 // Exercise 4
 function calculateTotal() {
+    var total=0;
     // Calculate total price of the cart either using the "cartList" array
+    for (var i = 0; i < cartList.length - 1; i++) {
+        total = total + cartList[i].price
+    }
+    alert("Total:" + total);
+
 }
 
 // Exercise 5
