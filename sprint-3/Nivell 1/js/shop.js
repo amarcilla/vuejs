@@ -87,10 +87,8 @@ function buy(id) {
     var total = 0;
     //??? No entenc pq hem de fer el loop????
 
-
     //Afegim el producte escollit a la carList
     cartList.push(products[id - 1]);
-
 
     // products.forEach(function (element, id, cartList) {
     //      //total += array[index] * index;
@@ -172,11 +170,16 @@ function generateCart() {
             if (cartList[i].id != cart[j].id) {
                 cart.push(cartList[i]);
                 //alert("afegim element a la cart " + cartList[i].id);
+            } else{
+                cart[j].quantity=cart[j].quantity +1;
+                cart[j].subtotal=cart[j].subtotal + cartList[i].price;
+                alert("REPE");
+                alert(cart[j].quantity + " " + cart[j].subtotal );
             }
         }
     }
 
-    //VAlidem elements CArt
+    //Validem elements CArt
     alert(cart.length)
     for (var i = 0; i < cart.length; i++) {
         alert(cartList[i].name);
