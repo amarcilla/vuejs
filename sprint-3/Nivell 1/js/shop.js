@@ -161,34 +161,57 @@ function generateCart() {
     // Using the "cartlist" array that contains all the items in the shopping cart, 
     // generate the "cart" array that does not contain repeated items, instead each item of this array "cart" shows the quantity of product.
 
-    cart.push(cartList[0]);
-    //alert("afegim element a la cart " + cartList[0].id);
+    
 
-    for (var i = 0; i < cartList.length; i++) {
-        for (var j = 0; j < cart.length; j++) {
-            //alert("lista original " + cartList[i].id + " llista nova " + cart[j].id);
-            if (cartList[i].id != cart[j].id) {
-                cart.push(cartList[i]);
-                //alert("afegim element a la cart " + cartList[i].id);
-            } else{
-                cart[j].quantity=cart[j].quantity +1;
-                cart[j].subtotal=cart[j].subtotal + cartList[i].price;
-                alert("REPE");
-                alert(cart[j].quantity + " " + cart[j].subtotal );
-            }
+     for (var i = 0; i < cartList.length; i++) {
+        const elemento = cartList[i];
+        
+        // amb l'include busquem l'element a la cart.
+        if (!cart.includes(cartList[i])) {
+            cart.push(elemento);            
+            // no podem agafar la i, pq sinó se'ns desborda .. agafem l'ultim element.
+            cart[cart.length-1].quantity = 1;
+            cart[cart.length-1].subtotal = cartList[i].price;            
+        } else{        
+            // el findIndex el fem servir pq ens torni l'id del objecte trobat.
+            // No ho he sabut fer amb el vanilla javascript 
+            objIndex = cart.findIndex((obj => obj.id == cartList[i].id));
+            cart[objIndex].quantity = cart[objIndex].quantity + 1;
+            cart[objIndex].subtotal = cart[objIndex].subtotal + cartList[i].price;
         }
     }
 
-    //Validem elements CArt
-    alert(cart.length)
-    for (var i = 0; i < cart.length; i++) {
-        alert(cartList[i].name);
-    }
+    console.log ( "validem Cart");    
+     for (var i = 0; i < cart.length; i++) {
+         console.log(cartList[i].name);
+     }
 }
 
 // Exercise 6
 function applyPromotionsCart() {
     // Apply promotions to each item in the array "cart"
+    /* Per a ser un bon e-commerce, ens falta implementar promocions, apartat importantíssim en qualsevol botiga.
+    Per a això, el client ens ha transmès dos tipus de promocions que vol per a la seva e-commerce:    
+    - Si l'usuari compra 3 o més ampolles d'oli, el preu del producte descendeix a 10 euros.    
+    - En comprar-se 10 o més mescles per a fer pastís, el seu preu es rebaixa a 2/3.            
+    En aquest exercici has de completar la funció applyPromotionsCart(), la qual rep el array cart, modificant el camp subtotalWithDiscount en cas que es s'apliqui promoció. D'aquesta manera les promocions apareixeran per producte, no sols en els subtotales!
+    */ 
+   
+    //Generem la Cart sense repetits
+    generateCart();
+
+    for (var i = 0; i < cart.length; i++) {
+        /* Si l'usuari compra 3 o més ampolles d'oli, el preu del producte descendeix a 10 euros. */
+        if ((cart[i].id ==1) && (cart[i].quantity>=3)){            
+            cart[i].subtotalWithDiscount = cart[i].quantity * 10;
+            console.log( "ha comprat 3 o més ampolles d'oli. Afegir descompte") ;           
+        }
+        /* En comprar-se 10 o més mescles per a fer pastís, el seu preu es rebaixa a 2/3. */
+        if ((cart[i].id ==3) && (cart[i].quantity>=10 )){            
+            cart[i].subtotalWithDiscount = cart[i].quantity * ((cart[i].price)* 2)/3 ;
+            console.log( "ha comprat 10 o més mescles de pastis. Afegir descompte") ;         
+        }
+    }    
 }
 
 // Exercise 7
