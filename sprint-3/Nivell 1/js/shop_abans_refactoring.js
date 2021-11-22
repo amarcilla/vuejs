@@ -80,7 +80,6 @@ var total = 0;
 
 
 // Exercise 1
-/* En el refactoring l'ocultem
 function buy(id) {
     // 1. Loop for to the array products to get the item to add to cart
     // 2. Add found product to the cartList array
@@ -96,7 +95,6 @@ function buy(id) {
     //      //alert(cartList[id].name);
     // });
 }
-*/
 
 // Exercise 2
 function cleanCart() {
@@ -159,7 +157,6 @@ function calculateTotal() {
 }
 
 // Exercise 5
-/* En el refactoring l'ocultem
 function generateCart() {
     // Using the "cartlist" array that contains all the items in the shopping cart, 
     // generate the "cart" array that does not contain repeated items, instead each item of this array "cart" shows the quantity of product.
@@ -175,7 +172,7 @@ function generateCart() {
             cart[cart.length-1].subtotal = cartList[i].price;            
         } else{        
             // el findIndex el fem servir pq ens torni l'id del objecte trobat.
-            // No ho he sabut fer amb el vanilla javascript 
+            // per fer-ho vanilla javascript seria amb un for 
             objIndex = cart.findIndex((obj => obj.id == cartList[i].id));
             cart[objIndex].quantity = cart[objIndex].quantity + 1;
             cart[objIndex].subtotal = cart[objIndex].subtotal + cartList[i].price;
@@ -187,7 +184,6 @@ function generateCart() {
          console.log(cartList[i].name);
      }
 }
-*/
 
 // Exercise 6
 function applyPromotionsCart() {

@@ -5,4 +5,6 @@ body {
 }
 #errorPassword, #errorName, #errorPhone {
     display: none;
+    border: 2px dashed red;
 }
+
