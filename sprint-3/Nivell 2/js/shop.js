@@ -154,15 +154,15 @@ function applyPromotionsCart(id) {
     */
 
     /* Si l'usuari compra 3 o més ampolles d'oli (id:1), el preu del producte descendeix a 10 euros. */
-    if ( (cart[id].quantity >= 3) && (cart[id].id==1)  ) {
+    if ((cart[id].quantity >= 3) && (cart[id].id == 1)) {
         cart[id].subtotalWithDiscount = cart[id].quantity * 10;
-        console.log("ha comprat 3 o més ampolles d'oli. Preu total amb descompte:" + cart[id].subtotalWithDiscount );        
+        console.log("ha comprat 3 o més ampolles d'oli. Preu total amb descompte:" + cart[id].subtotalWithDiscount);
         console.log("\n");
     }
     /* En comprar-se 10 o més mescles per a fer pastís, el seu preu es rebaixa a 2/3. */
-    if ((cart[id].quantity >= 10) && (cart[id].id==3)) {
+    if ((cart[id].quantity >= 10) && (cart[id].id == 3)) {
         cart[id].subtotalWithDiscount = cart[id].quantity * ((cart[id].price) * 2) / 3;
-        console.log("ha comprat 10 o més mescles de pastis. Preu total amb descompte:" + cart[id].subtotalWithDiscount );        
+        console.log("ha comprat 10 o més mescles de pastis. Preu total amb descompte:" + cart[id].subtotalWithDiscount);
         console.log("\n");
     }
 }
@@ -193,7 +193,7 @@ function addToCart(id) {
 
     calculateSubtotals();
     calculateTotal();
-    if(objIndex != -1 ) applyPromotionsCart(objIndex);
+    if (objIndex != -1) applyPromotionsCart(objIndex);
 
 }
 
@@ -204,11 +204,41 @@ function removeFromCart(id) {
     let objIndex = cart.findIndex((obj => obj.id == products[id - 1].id));
     if (objIndex != -1) {
         cart.pop(objIndex);
-        console.log("Eliminat producte de la cart: " + products[id-1].name)
-    }    
+        console.log("Eliminat producte de la cart: " + products[id - 1].name)
+    }
 }
 
 // Exercise 10
 function printCart() {
     // Fill the shopping cart modal manipulating the shopping cart dom
+    // el html de la modal està a shop.html
+    //var finestra = document.getElementById('listProductes');
+    //var lista = finestra.childNodes;
+
+    var lista = document.getElementById('list');
+
+    while (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
+
+
+    for (var i = 0; i < cart.length; i++) {
+
+        // Busquem l'element per id
+        var li = document.createElement("li");
+        var discount= null;
+
+        if (cart[i].subtotalWithDiscount != null)  {
+            discount="( con descuento " + cart[i].subtotalWithDiscount + " )";
+            contenido = cart[i].quantity + " x " + cart[i].name + " " + cart[i].price + " = " +  cart[i].subtotal + "€ " + discount ;
+        }else{
+            contenido = cart[i].quantity + " x " + cart[i].name + " " + cart[i].price + " = " +  cart[i].subtotal + "€ "  ;
+        }    
+        
+        // per insertar un contingut al li, primer hem de crear un textnode
+        var textnode = document.createTextNode(contenido);         
+        li.appendChild(textnode);
+        document.querySelector("#list").appendChild(li);
+        
+    }
 }
