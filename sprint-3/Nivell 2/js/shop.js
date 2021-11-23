@@ -199,8 +199,13 @@ function addToCart(id) {
 
 // Exercise 9
 function removeFromCart(id) {
-    // 1. Loop for to the array products to get the item to add to cart
-    // 2. Add found product to the cart array
+    // Estic passant com a paràmtre el producte 1
+    // Busquem si el producte està a la cart
+    let objIndex = cart.findIndex((obj => obj.id == products[id - 1].id));
+    if (objIndex != -1) {
+        cart.pop(objIndex);
+        console.log("Eliminat producte de la cart: " + products[id-1].name)
+    }    
 }
 
 // Exercise 10
