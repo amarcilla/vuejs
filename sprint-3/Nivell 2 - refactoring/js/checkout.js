@@ -1,11 +1,12 @@
 /*En aquest exercici hauràs d'implementar la lògica perquè els camps del formulari compleixin les següents condicions:
-- Tots els camps són obligatoris.
-- Tots els camps han de tenir almenys 3 caràcters.
-- El nom i cognoms han de contenir només lletres.
-- El telèfon ha de contenir només números.
-- La contrasenya ha d'incloure números i lletres.
-- L'email ha de tenir format d'email.
+okis - Tots els camps són obligatoris.
+okis - Tots els camps han de tenir almenys 3 caràcters.
+okis - El nom i cognoms han de contenir només lletres.
+okis - El telèfon ha de contenir només números.
+okis - La contrasenya ha d'incloure números i lletres.
+okis - L'email ha de tenir format d'email.
 */
+
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -18,7 +19,7 @@
     Array.prototype.slice.call(forms)
       .forEach(function (form) {
         form.addEventListener('submit', function (event) {
-          if (!form.checkValidity()) {
+          if (!form.checkValidity()) {               
             event.preventDefault()
             event.stopPropagation()
           }
@@ -27,3 +28,4 @@
         }, false)
       })
   })()
+
