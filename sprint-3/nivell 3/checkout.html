@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <!-- header -->
+    <h1 class="text-center head m-4">Checkout Page</h1>
+    <!-- header -->
+    <!-- icons starts here -->
+    <div class="icons">
+        <div class="row mr-0">
+            <div class="col-sm-6">
+                <h2 class="my-3 mx-5 bord shadow"><i class="fas fa-dollar-sign bg p-4 mr-4"></i>Cash on Delivery</h2>
+            </div>
+            <div class="col-sm-6 ">
+                <h2 class="my-3 mx-5 bord shadow"><i class="fas fa-arrows-alt-h bg p-4 mr-4"></i>100% Return</h2>
+            </div>
+        </div>
+
+        <div class="row mr-0">
+            <div class="col-sm-6">
+                <h2 class="my-3 mx-5 bord shadow"><i class="far fa-thumbs-up bg p-4 mr-4"></i>Quality Assured</h2>
+            </div>
+            <div class="col-sm-6 ">
+                <h2 class="my-3 mx-5 bord shadow"><i class="fas fa-stopwatch bg p-4 mr-4"></i>Delivery on time</h2>
+            </div>
+        </div>
+    </div>
+    <!-- icons end here -->
+    <!-- Checkout starts here -->
+    <form class="form needs-validation" id="formulari" novalidate>
+        <div class="row bord p-5 shadow m-5">
+            <div class="col-sm-6">
+                <div class="mt-3 row">
+                    <h5 class="my-auto">First Name :</h5>
+                    <input class="ml-3 name input rounded p-2 form-control" type="text" name="firstName" id="firstName"
+                        placeholder="First Name" minlength="3" pattern="[A-Z a-z]{3,15}" required>
+                    <div class="invalid-feedback">
+                        Escriu un fistname correcte. Minim 3 caràcters. Només lletres.
+                    </div>
+                </div>
+                <div class="mt-3 row ">
+                    <h5 class="my-auto">Email :</h5>
+                    <input class="ml-3 input rounded p-2 form-control" type="email" name="email" id="email"
+                        placeholder="Email" minlength="3"
+                        pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+                        required />
+                    <div class="invalid-feedback">
+                        Escriu un email correcte. Minim 3 caràcters
+                    </div>
+                </div>
+                <div class="mt-3 row ">
+                    <h5 class="my-auto">Address :</h5>
+                    <input class="ml-3 input rounded p-2 form-control" type="text" name="address" id="address"
+                        placeholder="Address" minlength="3" required />
+                    <div class="invalid-feedback">
+                        Escriu una adreça correcte. Minim 3 caràcters.
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="mt-3 row">
+                    <h5 class="my-auto name my-auto">Last Name :</h5>
+                    <input class="ml-3 input rounded p-2 form-control" type="text" name="lastName" id="lastName"
+                        placeholder="Last Name" minlength="3" pattern="[A-Z a-z]{3,15}" required />
+                    <div class="invalid-feedback">
+                        Escriu un lastname correcte. Minim 3 caràcters. Només lletres.
+                    </div>
+                </div>
+                <div class="mt-3 row">
+                    <h5 class="my-auto my-auto ">Password :</h5>
+                    <input class="ml-3 input password rounded p-2 form-control" title="(4-8 characters)" name="password"
+                        id="password" type="password" minlength="3" maxlength="8" placeholder="Password"
+                        pattern="[A-Za-z0-9]{8,16}" required />
+                    <div class="invalid-feedback">
+                        Escriu un password correcte. Minim 3 caràcters
+                    </div>
+                </div>
+                <div class="mt-3 row">
+                    <h5 class="my-auto my-auto">Phone Number :</h5>
+                    <input class="ml-3 phone input rounded p-2 form-control" type="number" name="phone" id="phone"
+                        placeholder="Phone No." minlength="3" required />
+                    <div class="invalid-feedback">
+                        Escriu un numero de telèfon correcte. Minim 3 caràcters
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Checkout ends here -->
+        <!-- addToCart button -->
+        <div class="m-5 final text-right">
+            <button type="submit" id="btn" class="p-2 px-4 btn btn-primary shadow-lg"><i
+                    class="fas fa-cart-arrow-down p-2"></i>Buy</button>
+        </div>
+    </form>
+    <!-- addToCart Button -->
+    <!-- script tags -->
+    <script src="js/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -183,12 +183,14 @@ function addToCart(id) {
         cart.push(products[id - 1]);
         cart[cart.length - 1].quantity = 1;
         cart[cart.length - 1].subtotal = products[id - 1].price;
-        console.log("Afegit nou producte " + products[id - 1].name)
+        console.log("Afegit nou producte " + products[id - 1].name);
+        alert("Afegit nou producte " + products[id - 1].name)
     } else {
         // Si està a la cart, actualitzem
         cart[objIndex].quantity = cart[objIndex].quantity + 1;
         cart[objIndex].subtotal = cart[objIndex].subtotal + cart[objIndex].price;
-        console.log("Modificat producte de la llista " + cart[objIndex].name)
+        console.log("Modificat producte de la llista " + cart[objIndex].name);
+        alert("Modificat producte de la llista " + cart[objIndex].name)
     }
 
     calculateSubtotals();
@@ -203,8 +205,11 @@ function removeFromCart(id) {
     // Busquem si el producte està a la cart
     let objIndex = cart.findIndex((obj => obj.id == products[id - 1].id));
     if (objIndex != -1) {
-        cart.pop(objIndex);
-        console.log("Eliminat producte de la cart: " + products[id - 1].name)
+        cart.splice(objIndex, 1); 
+        console.log("Eliminat producte de la cart: " + products[id - 1].name);
+        alert("Eliminat producte de la cart: " + products[id - 1].name)
+    } else {
+        alert("Aquest element no el tens al carret")
     }
 }
 
@@ -212,19 +217,16 @@ function removeFromCart(id) {
 function printCart() {
     // Fill the shopping cart modal manipulating the shopping cart dom
     // el html de la modal està a shop.html
-    //var finestra = document.getElementById('listProductes');
-    //var lista = finestra.childNodes;
 
+    // Busquem l'element per id no per class.
     var lista = document.getElementById('list');
 
+    //netejem la llista, sinó va afegint cada vegada que entre i sortim
     while (lista.firstChild) {
         lista.removeChild(lista.firstChild);
     }
 
-
-    for (var i = 0; i < cart.length; i++) {
-
-        // Busquem l'element per id
+    for (var i = 0; i < cart.length; i++) {        
         var li = document.createElement("li");
         var discount= null;
 
@@ -238,7 +240,6 @@ function printCart() {
         // per insertar un contingut al li, primer hem de crear un textnode
         var textnode = document.createTextNode(contenido);         
         li.appendChild(textnode);
-        document.querySelector("#list").appendChild(li);
-        
+        document.querySelector("#list").appendChild(li);        
     }
 }
