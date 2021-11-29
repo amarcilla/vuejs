@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- El meus SASS File, per fer modificacions del primary and secondary-->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- els meus estils -->
+  <link rel="stylesheet" href="css/style.css">
+
+   
+
+
+  <title>Sprint 2: Nivell-1, exercici-1</title>
+</head>
+
+<body>
+
+
+  <div class="content ">
+
+    <!-- ******** -->
+    <!-- MENÚ -->
+    <!-- ******** -->
+    <section class="container " id="menu">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <img src="/images/logo-bookmark.svg" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse offset-md-6" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-disabled="true">contact</a>
+              </li>
+              <button type="button" class="btn btn-danger">Login</button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ******** -->
+    <!-- CABECERA -->
+    <!-- ******** -->
+    <section class="container" id="cabecera">
+      <div class="row pt-5 mt-5">
+        <div class="col justify-content-center align items-center">
+          <div class="card-body">
+            <h1 class="card-title">A simple bookmark manager</h1>
+            <p class="card-text">A clean and simple interface to organize your favourite websites. Open a
+              new browser tab and see your sites load instantly. Try it for free.</p>
+            <button type="button" class="btn btn-primary">Get it on Chrome</button>
+            <button type="button" class="btn btn-secondary">Get it on Firebox</button>
+          </div>
+        </div>
+        <div class="col">
+          <image src="/images/illustration-hero.svg" class="img-fluid"></image>
+        </div>
+      </div>
+    </section>    
+
+ <!-- ***************** -->
+    <!-- PESTAÑAS FEATURES -->
+    <!-- ***************** -->
+    <section class="container" id="features">
+        <div class="row justify-content-center">
+          <div class="col-7 ">
+            <h1 class="text-center">Features</h1>
+            <p class="text-center">Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+          </div>
+           <!-- ojo, d-md-flex: PER DEFECTE ESTA TOT EN UN BLOC FLEX SENSE WRAP, 
+            fiquem el md per indicar que sigui flex fins al breakpoint ... es a dir per mobils es fara wrap.
+           -->
+          <div class="d-md-flex  carousel-nav col-8 col-8 justify-content-center">
+            <a href="#" class="col-lg col-md-8 active">Simple Bookmarking</a>
+            <a href="#" class="col-lg col-md-8">Speedy searching</a>
+            <a href="#" class="col-lg col-md-8">Easy sharing</a>
+          </div>
+        </div>
+  
+  
+        <div class="owl-carousel owl-1">
+          <!-- pestanya 1.Simple -->
+          <div class="media-29101 d-md-flex w-100">
+            <div class="img">
+              <img src="/images/illustration-features-tab-1.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="text">
+              <h2><a href="#">Bookmark in one click</a></h2>
+              <p>Organize your bookmarks however you like. Our simple drag-and-drop
+                interface gives you complete control over how you manage your favourite sites.</p>
+              <button type="card-button" class="btn btn-primary">More info</button>
+            </div>
+  
+          </div> <!-- .pestanya 1 -->
+  
+          <!-- pestanya 2. facil -->
+          <div class="media-29101 d-md-flex w-100">
+            <div class="img">
+              <img src="/images/illustration-features-tab-2.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="text">
+              <h2><a href="#">Share your bookmarks</a></h2>
+              <p>Easily share your bookmarks and collections with others. Create a
+                shareable link that you can send at the click of a button.</p>
+              <button type="card-button" class="btn btn-primary">More info</button>
+            </div>
+          </div> <!-- .pestanya 2 -->
+  
+          <!-- pestanya 3.Inteligente -->
+          <div class="media-29101 d-md-flex w-100">
+            <div class="img">
+              <img src="/images/illustration-features-tab-3.svg" alt="Image" class="img-fluid">
+            </div>
+            <div class="text">
+  
+              <h2><a href="#">Intelligent search</a></h2>
+              <p>Our powerful search feature will help you find saved sites in no
+                time at all. No need to trawl through all of your bookmarks.</p>
+              <button type="card-button" class="btn btn-primary">More info</button>
+            </div>
+          </div> <!-- .pestanya 3 -->
+        </div>
+      </section>
+
+        <!-- ***************** -->
+    <!-- DOWNLOADS -->
+    <!-- ***************** -->
+    <section class="container m-10" id="downloads">
+        <div class="row hidden-md-up justify-content-center ">
+          <div class="col-md-6 justify-content-center ">
+            <h1 class="text-center">Download the extension</h1>
+            <p class="text-center">We've got more browsers in the pipeline. Please do let us
+              know if you've got a favourite you'd like prioritize</p>
+          </div>
+          <div class="row hidden-md-up  justify-content-center ">
+            <!-- chrome -->
+            <!-- PAra table y mobil que ocupen 7 y un padding_bottom 3 -->
+            <div class="col-7 col-sm-7 col-lg pb-3">
+              <div class="card shadow bg-white rounded">
+                <div class="card-body  text-center">
+                  <img src="/images/logo-chrome.svg" alt="Image" class="img-fluid rounded mx-auto d-block">
+                  <h4 class="card-title text-center">Add to chrome</h4>
+                  <p class="card-text p-y-1 text-center">Minimun version 62</p>
+                  <hr class="border-style: dotted;" />
+                  <button type="card-button" class="btn btn-primary">Add & install extension</button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Firefox -->
+            <!-- PAra table y mobil que ocupen 7 y un padding_bottom 3 -->
+            <div class="col-7  col-sm-7 col-lg pb-3">
+              <div class="card shadow bg-white rounded">
+                <div class="card-body text-center">
+                  <img src="/images/logo-firefox.svg" alt="Image" class="img-fluid rounded mx-auto d-block">
+                  <h4 class="card-title text-center">Add to Firefox</h4>
+                  <p class="card-text p-y-1 text-center">Minimun version 55</p>
+                  <hr class="border-style: dotted;" />
+                  <button type="card-button" class="btn btn-primary">Add & install extension</button>
+                </div>
+              </div>
+            </div>
+  
+            <!-- opera -->
+            <!-- PAra table y mobil que ocupen 7 y un padding_bottom 3 -->
+            <div class="col-7  col-sm-7 col-lg pb-3">
+              <div class="card shadow bg-white rounded ">
+                <div class="card-body text-center">
+                  <img src="/images/logo-opera.svg" alt="Image" class="img-fluid rounded mx-auto d-block">
+                  <h4 class="card-title text-center">Add to opera</h4>
+                  <p class="card-text p-y-1 text-center">Minimun version 46</p>
+                  <hr class="border-style: dotted;" />
+                  <button type="card-button" class="btn btn-primary">Add & install extension</button>
+                </div>
+              </div>
+            </div>
+  
+  
+          </div>
+        </div>
+      </section>
+  
+
+          <!-- ***************** -->
+    <!-- faqs - acordion-->
+    <!-- ***************** -->
+    <section class="container " id="faqs">
+        <div class="row  justify-content-center ">
+          <div class="col-md-10 justify-content-center">
+            <h1 class="text-center">Frequently asked questions</h1>
+            <p class="text-center">Here some of our FAQS. If you have any other questions you'd like answered please feel
+              free to email us</p>
+          </div>
+        </div>
+  
+        <div class="row  justify-content-center ">
+          
+            <!-- bookmarks -->
+            <div class="accordion active col-md-7">
+              <div class="accordion_tab active">
+                What is bookmark
+                <div class="accordion_arrow">
+                  <img src="/images/faqs.png" alt="arrow">
+                </div>
+              </div>
+              <div class="accordion_content">
+                <p>A boormark is ...</p>
+              </div>
+            </div>
+  
+  
+            <!-- Request browser -->
+            <div class="accordion col-md-7">
+              <div class="accordion_tab">
+                How I can request a new browser
+                <div class="accordion_arrow">
+                  <img src="/images/faqs.png" alt="arrow">
+                </div>
+              </div>
+              <div class="accordion_content">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quis sed praesentium dolorem
+                  hic
+                  ipsam maiores magnam voluptatem deleniti sunt.</p>
+  
+              </div>
+            </div>
+  
+            <!-- mobile APP -->
+            <div class="accordion col-md-7">
+              <div class="accordion_tab">
+                Is there a mobile app?
+                <div class="accordion_arrow">
+                  <img src="/images/faqs.png" alt="arrow">
+                </div>
+              </div>
+              <div class="accordion_content">
+                <p>Mobile App</p>
+              </div>
+            </div>
+  
+            <!-- mobile APP -->
+            <div class="accordion col-md-7">
+              <div class="accordion_tab">
+                Waht about other Chromium browser?
+                <div class="accordion_arrow">
+                  <img src="/images/faqs.png" alt="arrow">
+                </div>
+              </div>
+              <div class="accordion_content">
+                <p>Mobile App</p>
+              </div>
+            </div>
+
+             <!-- ***************** -->
+    <!-- footer -->
+    <!-- ***************** -->
+    <section class="container " id="footer">
+
+
+      <div class="container text-center bg-primary text-white pt-3 mt-3 pb-3">
+        <div class="row justify-content-center  ">
+          <div class="col-8">
+            <h7 class="fw-light mt-4 ">35000+ already joined</h7>
+            <h4 class="fw-light mt-3 ">Stay Up-to-date with what we're doing</h4>
+          </div>
+        </div>
+        <form action="/action_page.php" class="was-validated">
+          <div class="row justify-content-center pt-3 mt-3 ">
+            <div class="col-auto">
+              <input type="email" required class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter your name adress">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-danger">Contat us</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+
+      <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark  ">
+        <nav class="navbar navbar-expand-lg ">
+          <img src="images/logo-bookmark.svg" alt="">
+
+          <div class="collapse navbar-collapse offset-md-1" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-disabled="true">contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+
+      </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
