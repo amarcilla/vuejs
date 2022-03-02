@@ -1,3 +1,17 @@
+document.querySelectorAll(".cardAdd").forEach(function(element) {
+	element.addEventListener('click', function() {
+		var dataID = element.getAttribute('data-id');
+        addToCart(dataID);
+	});
+});
+
+document.querySelectorAll(".cardRemove").forEach(function(element) {
+	element.addEventListener('click', function() {
+		var dataID = element.getAttribute('data-id');
+        removeFromCart(dataID);
+	});
+});
+
 // If you have time, you can move this variable "products" to a json file and load the data in this js. It will look more professional
 var products = [
     {

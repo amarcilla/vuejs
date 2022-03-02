@@ -7,6 +7,7 @@ okis - La contrasenya ha d'incloure números i lletres.
 okis - L'email ha de tenir format d'email.
 */
 
+var primerElement = document.getElementById('primer');
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
